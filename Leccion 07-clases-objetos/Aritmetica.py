@@ -1,0 +1,27 @@
+#ejercicio
+class Aritmetica:
+    """
+    clase aritmetica para realizar las operaciones de sumar, restar, etc.
+    """
+    def __init__(self, operandoA, operandoB):
+        self.operandoA = operandoA
+        self.operandoB = operandoB
+
+    def suma(self):
+        return self.operandoA + self.operandoB
+
+    def restar(self):
+        return self.operandoA - self.operandoB
+
+    def multiplicar(self):
+        return self.operandoA * self.operandoB
+
+    def dividir(self):
+        return self.operandoA / self.operandoB
+
+
+aritmetica1 = Aritmetica(5, 6)
+print(f'Suma: {aritmetica1.suma()}')
+print(f'Resta: {aritmetica1.restar()}')
+print(f'Mult: {aritmetica1.multiplicar()}')
+print(f'Division: {aritmetica1.dividir():.2f}')
